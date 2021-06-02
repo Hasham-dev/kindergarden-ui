@@ -13,7 +13,13 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans]
-      }
+      },
+      backgroundImage: theme => ({
+        'picture-1': "url('/src/Resources/Tesla.jpg')",
+        'picture-2': "url('/src/Resources/tesla4.jpg')",
+        'picture-3': "url('/src/Resources/tesla2.jpg')",
+        'picture-4': "url('/src/Resources/tesla3.jpg')"
+      })
     },
     screens: {
       xs: '360px',

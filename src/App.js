@@ -4,7 +4,7 @@ import Routes from './Router/routes'
 
 function App () {
   return (
-    <div>
+    <div className='font-sans'>
       <Navbar />
       <Routes />
     </div>
