@@ -4,7 +4,7 @@ import WindowSlide from '../Components/WindowSlide/WindowSlide'
 
 function Home () {
   return (
-    <FullPage duration={500}>
+    <FullPage duration={400}>
       <Slide className='bg-picture-1 bg-center bg-cover flex flex-col h-screen'>
         <WindowSlide
           leftBtnText='Left Button'
@@ -26,6 +26,47 @@ function Home () {
         />
       </Slide>
       <Slide className='bg-picture-4 bg-center bg-cover flex flex-col h-screen'>
+        <WindowSlide
+          filter='filter invert'
+          leftBtnText='Left Button'
+          rightBtnText='Left Button'
+        />
+      </Slide>
+      <Slide className='bg-picture-5 bg-center bg-cover flex flex-col h-screen'>
+        <WindowSlide
+          leftBtnText='Left Button'
+          rightBtnText='Left Button'
+        />
+      </Slide>
+      <Slide className='bg-picture-6 bg-center bg-cover flex flex-col h-screen'>
+        <WindowSlide
+          filter='filter invert md:invert-0'
+          leftBtnText='Left Button'
+          rightBtnText='Left Button'
+        />
+      </Slide>
+      <Slide className='bg-picture-7 bg-center bg-cover flex flex-col h-screen'>
+        <WindowSlide
+          filter='filter invert'
+          leftBtnText='Left Button'
+          rightBtnText='Left Button'
+        />
+      </Slide>
+      <Slide className='bg-picture-8 bg-center bg-cover flex flex-col h-screen'>
+        <WindowSlide
+          filter='filter invert'
+          leftBtnText='Left Button'
+          rightBtnText='Left Button'
+        />
+      </Slide>
+      <Slide className='bg-picture-9 bg-center bg-cover flex flex-col h-screen'>
+        <WindowSlide
+          filter='filter invert'
+          leftBtnText='Left Button'
+          rightBtnText='Left Button'
+        />
+      </Slide>
+      <Slide className='bg-picture-10 bg-center bg-cover flex flex-col h-screen'>
         <WindowSlide
           filter='filter invert'
           leftBtnText='Left Button'
