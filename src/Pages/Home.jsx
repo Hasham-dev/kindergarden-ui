@@ -9,7 +9,6 @@ function Home () {
         scrollingSpeed={500}
         fitToSectionDelay={500}
         render={({ state, fullpageApi }) => {
-          console.log(state, fullpageApi)
           return (
             <ReactFullpage.Wrapper>
               <div className='section bg-picture-1 bg-center bg-cover'>
@@ -17,9 +16,10 @@ function Home () {
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
+                  title='Nursery'
                 />
               </div>
-              <div className='section bg-picture-2 bg-center bg-cover flex flex-col h-screen'>
+              {/* <div className='section bg-picture-2 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
@@ -32,12 +32,13 @@ function Home () {
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div>
+              </div> */}
               <div className='section bg-picture-4 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
+                  title='Kindergarten'
                 />
               </div>
               <div className='section bg-picture-5 bg-center bg-cover flex flex-col h-screen'>
@@ -45,9 +46,10 @@ function Home () {
                   leftBtnText='Left Button'
                   filter='filter invert'
                   rightBtnText='Left Button'
+                  title='Preschool'
                 />
               </div>
-              <div className='section bg-picture-6 bg-center bg-cover flex flex-col h-screen'>
+              {/* <div className='section bg-picture-6 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
@@ -67,9 +69,10 @@ function Home () {
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div>
+              </div> */}
               <div className='section bg-picture-9 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
+                  title='Afterschool'
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
@@ -77,6 +80,7 @@ function Home () {
               </div>
               <div className='section bg-picture-10 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
+                  title='Summer camp'
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
