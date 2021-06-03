@@ -4,7 +4,7 @@ import Drawer from './Drawer/Drawer'
 import { useState } from 'react'
 
 function Navbar () {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <header className='fixed z-10 uppercase mt-0 w-full px-5 py-2 font-bold flex justify-between items-center text-white'>
