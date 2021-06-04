@@ -2,6 +2,7 @@ import Icon from '../Resources/abc.png'
 import Hamburger from 'hamburger-react'
 import Drawer from './Drawer/Drawer'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar () {
   const [isOpen, setIsOpen] = useState(false)
@@ -15,7 +16,11 @@ function Navbar () {
           <Hamburger size={20} color={isOpen ? 'black' : 'white'} toggled={isOpen} onToggle={() => setIsOpen(!isOpen)} />
         </span>
       </div>
-      <Drawer isOpen={isOpen} setIsOpen={setIsOpen} />
+      <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
+        <Link className='text-black pl-10' onClick={() => setIsOpen(false)} to='/'>Home</Link>
+        <Link className='text-black pl-10' onClick={() => setIsOpen(false)} to='/about'>About</Link>
+        <Link className='text-black pl-10' onClick={() => setIsOpen(false)} to='/contact'>Contact</Link>
+      </Drawer>
     </header>
   )
 }
