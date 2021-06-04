@@ -4,7 +4,7 @@ function TextContainer ({ state }) {
   return (
     <>
       {state === 'left' &&
-        <div className='md:w-1/4 w-screen h-1/2 md:h-screen bg-white md:relative absolute md:bottom-none bottom-0'>
+        <div className='md:w-1/4 w-screen h-1/3 md:h-screen bg-white md:relative absolute md:bottom-none bottom-0'>
           <span className='ml-10 md:mt-40 mt-10 flex flex-col'>
             <span className='text-20 md:text-2xl'>
               Value
@@ -12,8 +12,9 @@ function TextContainer ({ state }) {
             <span className='text-60 md:text-5xl font-bold'>
               Pay Less for Electricity
             </span>
-            <p className='pr-10 text-justify font-semibold'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nemo iure odit unde, maiores nostrum ratione praesentium voluptates dolore, esse porro quisquam debitis dolores laborum aperiam adipisci tempora ut nisi!
+            <p className='pr-10 text-sm md:text-lg text-justify font-semibold'>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam nisi et mollitia facilis illum nulla quisquam itaque! Repudiandae, minima tempore, a animi atque doloremque dolore accusamus illum ea sapiente voluptatum.
+              Sint at ipsa ullam aut sapiente impedit ea possimus veritatis sit quas perspiciatis autem odit doloribus aperiam dicta rem, corporis deleniti magni asperiores itaque iusto excepturi quae? Alias, nostrum earum!
             </p>
           </span>
         </div>}
@@ -29,8 +30,9 @@ function TextContainer ({ state }) {
               </span>
             </span>
             <span className='w-screen md:w-1/2'>
-              <p className='pr-20 md:pr-40 text-justify font-semibold'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat eaque at pariatur, repellat nulla, voluptate fugit saepe atque soluta cumque, autem ea velit. Culpa deserunt vero, nesciunt doloremque eaque cum.
+              <p className='pr-20 md:pr-40 text-sm md:text-lg text-justify font-semibold'>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus hic earum, ipsa non rerum voluptate error nulla voluptates ea doloribus cupiditate id dolorem blanditiis, debitis, quaerat voluptatum vitae placeat officia!
+                Exercitationem commodi nihil expedita esse? Repellat eum id commodi, ipsa delectus aut non tempora optio ex, porro at ad sunt ratione. Doloribus, veritatis at nulla et ad sint quas ullam?
               </p>
             </span>
           </span>
@@ -44,8 +46,9 @@ function TextContainer ({ state }) {
             <span className='text-60 md:text-5xl font-bold'>
               Pay Less for Electricity
             </span>
-            <p className='pr-10 text-justify font-semibold'>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum delectus autem id sit soluta, ducimus iste porro fuga iure unde at, suscipit vero. Impedit fugit possimus numquam doloribus distinctio asperiores!
+            <p className='pr-10 text-sm md:text-lg text-justify font-semibold'>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum culpa, maiores dolor odio unde voluptatibus voluptate, maxime quo quod nobis, voluptates corrupti porro animi facere totam nulla quisquam facilis veritatis!
+              Tempora adipisci laboriosam modi tenetur accusamus impedit? Illo earum nihil eos, ex rerum delectus aspernatur vero tempora inventore pariatur molestias enim magnam dolorem voluptas dignissimos ipsa, minus mollitia? Delectus, veritatis.
             </p>
           </span>
         </div>}
