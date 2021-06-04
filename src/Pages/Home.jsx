@@ -1,5 +1,6 @@
 import WindowSlide from '../Components/WindowSlide/WindowSlide'
 import ReactFullpage from '@fullpage/react-fullpage'
+import Slider from '../Components/Slider/Slider'
 
 function Home () {
   return (
@@ -8,84 +9,85 @@ function Home () {
         licenseKey='http://www.gnu.org/licenses/gpl.html'
         scrollingSpeed={500}
         fitToSectionDelay={500}
+        verticalCentered={false}
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
-              <div className='section bg-picture-1 bg-center bg-cover'>
+              <Slider picture='1'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                   title='Nursery'
                 />
-              </div>
-              {/* <div className='section bg-picture-2 bg-center bg-cover flex flex-col h-screen'>
+              </Slider>
+              {/* <Slider className='section bg-picture-2 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div>
-              <div className='section bg-picture-3 bg-center bg-cover flex flex-col h-screen'>
+              </Slider>
+              <Slider className='section bg-picture-3 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div> */}
-              <div className='section bg-picture-4 bg-center bg-cover flex flex-col h-screen'>
+              </Slider> */}
+              <Slider picture='4'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                   title='Kindergarten'
                 />
-              </div>
-              <div className='section bg-picture-5 bg-center bg-cover flex flex-col h-screen'>
+              </Slider>
+              <Slider picture='5'>
                 <WindowSlide
                   leftBtnText='Left Button'
                   filter='filter invert'
                   rightBtnText='Left Button'
                   title='Preschool'
                 />
-              </div>
-              {/* <div className='section bg-picture-6 bg-center bg-cover flex flex-col h-screen'>
+              </Slider>
+              {/* <Slider className='section bg-picture-6 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div>
-              <div className='section bg-picture-7 bg-center bg-cover flex flex-col h-screen'>
+              </Slider>
+              <Slider className='section bg-picture-7 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div>
-              <div className='section bg-picture-8 bg-center bg-cover flex flex-col h-screen'>
+              </Slider>
+              <Slider className='section bg-picture-8 bg-center bg-cover flex flex-col h-screen'>
                 <WindowSlide
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div> */}
-              <div className='section bg-picture-9 bg-center bg-cover flex flex-col h-screen'>
+              </Slider> */}
+              <Slider picture='9'>
                 <WindowSlide
                   title='Afterschool'
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div>
-              <div className='section bg-picture-10 bg-center bg-cover flex flex-col h-screen'>
+              </Slider>
+              <Slider picture='10'>
                 <WindowSlide
                   title='Summer camp'
                   filter='filter invert'
                   leftBtnText='Left Button'
                   rightBtnText='Left Button'
                 />
-              </div>
+              </Slider>
             </ReactFullpage.Wrapper>
           )
         }}
