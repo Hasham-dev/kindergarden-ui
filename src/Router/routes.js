@@ -11,7 +11,6 @@ import Home from '../Pages/Home'
 
 export default function Routes () {
   const match = useRouteMatch()
-  console.log(match.path)
 
   return (
     <Switch>

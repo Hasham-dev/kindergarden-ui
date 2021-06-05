@@ -37,3 +37,25 @@
 .bg-picture-10{
     background-image: url("/src/Resources/10.jpg");
 }
+
+.slick-dots {
+    top: 100px; 
+    left: 100px;
+}
+
+.slick-prev {
+    left: 25px !important;
+    z-index: 1;
+}
+
+.slick-next {
+    right: 25px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+   color: #000;
+}
+
+.active{
+    background-color: black !important;
+}

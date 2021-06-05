@@ -2,6 +2,7 @@ import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import Slider from '../Components/Slider/Slider'
 import TextContainer from '../Components/TextContainer/TextContainer'
+import Card from '../Components/Cards/Cards'
 
 function About () {
   const picture = [
@@ -12,7 +13,7 @@ function About () {
     { picture: 10, position: 'right' }
   ]
   return (
-    <>
+    <div>
       <ReactFullpage
         licenseKey='http://www.gnu.org/licenses/gpl.html'
         scrollingSpeed={500}
@@ -26,11 +27,16 @@ function About () {
                   <TextContainer state={state.position} />
                 </Slider>
               ))}
+              <div className='section bg-white'>
+                <span>
+                  <Card />
+                </span>
+              </div>
             </ReactFullpage.Wrapper>
           )
         }}
       />
-    </>
+    </div>
   )
 }
 
