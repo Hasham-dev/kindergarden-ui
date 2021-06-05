@@ -6,3 +6,34 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.bg-picture-1{
+    background-image: url("/src/Resources/1.jpg");
+}
+.bg-picture-2{
+    background-image: url("/src/Resources/2.jpg");
+}
+.bg-picture-3{
+    background-image: url("/src/Resources/3.jpg");
+}
+.bg-picture-4{
+    background-image: url("/src/Resources/4.jpg");
+}
+.bg-picture-5{
+    background-image: url("/src/Resources/5.jpg");
+}
+.bg-picture-6{
+    background-image: url("/src/Resources/6.jpg");
+}
+.bg-picture-7{
+    background-image: url("/src/Resources/7.jpg");
+}
+.bg-picture-8{
+    background-image: url("/src/Resources/8.jpg");
+}
+.bg-picture-9{
+    background-image: url("/src/Resources/9.jpg");
+}
+.bg-picture-10{
+    background-image: url("/src/Resources/10.jpg");
+}

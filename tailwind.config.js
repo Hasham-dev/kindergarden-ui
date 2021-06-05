@@ -14,18 +14,6 @@ module.exports = {
       fontFamily: {
         sans: ['Nunito', ...defaultTheme.fontFamily.sans]
       },
-      backgroundImage: theme => ({
-        'picture-1': "url('/src/Resources/1.jpg')",
-        'picture-2': "url('/src/Resources/2.jpg')",
-        'picture-3': "url('/src/Resources/3.jpg')",
-        'picture-4': "url('/src/Resources/4.jpg')",
-        'picture-5': "url('/src/Resources/5.jpg')",
-        'picture-6': "url('/src/Resources/6.jpg')",
-        'picture-7': "url('/src/Resources/7.jpg')",
-        'picture-8': "url('/src/Resources/8.jpg')",
-        'picture-9': "url('/src/Resources/9.jpg')",
-        'picture-10': "url('/src/Resources/10.jpg')"
-      }),
       keyframes: {
         wiggle: {
           '0%': { opacity: 0 },
