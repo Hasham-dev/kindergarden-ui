@@ -2,7 +2,7 @@ import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import Slider from '../Components/Slider/Slider'
 import TextContainer from '../Components/TextContainer/TextContainer'
-import Card from '../Components/Cards/Cards'
+import ResponsiveSlider from '../Components/Slider/ResponsiveSlider'
 
 function About () {
   const picture = [
@@ -27,9 +27,10 @@ function About () {
                   <TextContainer state={state.position} />
                 </Slider>
               ))}
-              <div className='section bg-white'>
+              <div className='section'>
                 <span>
-                  <Card />
+                  {/* <Card /> */}
+                  <ResponsiveSlider />
                 </span>
               </div>
             </ReactFullpage.Wrapper>

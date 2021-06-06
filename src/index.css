@@ -39,8 +39,9 @@
 }
 
 .slick-dots {
-    top: 100px; 
-    left: 100px;
+    /* top: 100px;  */
+    /* left: 100px; */
+    color: white !important;
 }
 
 .slick-prev {
