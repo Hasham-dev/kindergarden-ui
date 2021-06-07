@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from '../../Resources/1.jpg'
+import Modal from '../Modal/Modal'
 
 function TextContainer ({ state }) {
+  const [showModal, setShowModal] = useState(false)
+
   return (
     <>
+      <Modal
+        showModal={showModal}
+        setShowModal={setShowModal}
+      />
       {state === 'left' &&
         <div className='md:w-1/4 w-screen h-1/3 md:h-screen text-white bg-black md:relative absolute md:bottom-none bottom-0'>
           <span className='ml-10 md:mt-40 mt-10 flex flex-col'>
@@ -20,7 +27,10 @@ function TextContainer ({ state }) {
               <span className='text-20 mt-10 md:w-full pr-10 w-1/2'>
                 <img src={Image} className='w-52 lg:w-full lg:h-80 h-28 rounded-xl' alt='Slider PNG' />
               </span>
-              <button class='w-1/2 md:w-auto w-30 h-14 border-2 px-0 md:px-10 mt-10 mr-10 py-2 text-lg text-purple-300 font-bold rounded-full'>
+              <button
+                class='w-1/2 md:w-auto w-30 h-14 border-2 px-0 md:px-10 mt-10 mr-10 py-2 text-lg text-purple-300 font-bold rounded-full'
+                onClick={() => setShowModal(true)}
+              >
                 Find out why
               </button>
             </span>
@@ -33,7 +43,10 @@ function TextContainer ({ state }) {
               <span className='text-2xl md:text-5xl font-bold'>
                 24/7 Monitoring & Support
               </span>
-              <button class='w-52 md:w-60 text-center h-14 border-2 px-0 md:px-10 md:mt-10 mr-10 py-2 text-lg text-purple-300 font-bold rounded-full'>
+              <button
+                class='w-52 md:w-60 text-center h-14 border-2 px-0 md:px-10 md:mt-10 mr-10 py-2 text-lg text-purple-300 font-bold rounded-full'
+                onClick={() => setShowModal(true)}
+              >
                 Find out why
               </button>
             </span>
@@ -55,7 +68,10 @@ function TextContainer ({ state }) {
               <span className='text-20 mt-10 md:w-full pr-10 w-1/2'>
                 <img src={Image} className='w-52 lg:w-full lg:h-80 h-28 rounded-xl' alt='Slider PNG' />
               </span>
-              <button class='w-1/2 md:w-auto w-30 h-14 border-2 px-0 md:px-10 mt-10 mr-10 py-2 text-lg text-purple-300 font-bold rounded-full'>
+              <button
+                class='w-1/2 md:w-auto w-30 h-14 border-2 px-0 md:px-10 mt-10 mr-10 py-2 text-lg text-purple-300 font-bold rounded-full'
+                onClick={() => setShowModal(true)}
+              >
                 Find out why
               </button>
             </span>
