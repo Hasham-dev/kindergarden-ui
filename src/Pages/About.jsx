@@ -4,6 +4,7 @@ import Slider from '../Components/Slider/Slider'
 import TextContainer from '../Components/TextContainer/TextContainer'
 import ResponsiveSlider from '../Components/Slider/ResponsiveSlider'
 import ImageTextSlider from '../Components/Slider/ImageTextSlider'
+import PreSchoolSlider from '../Components/PreSchoolIntialiSlider/PreSchoolSlider'
 
 function About () {
   const picture = [
@@ -23,6 +24,12 @@ function About () {
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
+              <Slider picture='4'>
+                <PreSchoolSlider
+                  title='Kindergarten'
+                  animation
+                />
+              </Slider>
               {picture.map((state, index) => (
                 <Slider key={index} picture={state.picture}>
                   <TextContainer state={state.position} />
