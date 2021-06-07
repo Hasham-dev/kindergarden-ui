@@ -16,9 +16,10 @@ function Home () {
               <Slider picture='1'>
                 <WindowSlide
                   filter='filter invert'
-                  leftBtnText='Left Button'
-                  rightBtnText='Left Button'
+                  leftBtnText='Register Now'
+                  rightBtnText='Learn More'
                   title='Nursery'
+                  animation
                 />
               </Slider>
               {/* <Slider className='section bg-picture-2 bg-center bg-cover flex flex-col h-screen'>
@@ -38,16 +39,16 @@ function Home () {
               <Slider picture='4'>
                 <WindowSlide
                   filter='filter invert'
-                  leftBtnText='Left Button'
-                  rightBtnText='Left Button'
+                  leftBtnText='Register Now'
+                  rightBtnText='Learn More'
                   title='Kindergarten'
                 />
               </Slider>
               <Slider picture='5'>
                 <WindowSlide
-                  leftBtnText='Left Button'
                   filter='filter invert'
-                  rightBtnText='Left Button'
+                  leftBtnText='Register Now'
+                  rightBtnText='Learn More'
                   title='Preschool'
                 />
               </Slider>
@@ -76,16 +77,16 @@ function Home () {
                 <WindowSlide
                   title='Afterschool'
                   filter='filter invert'
-                  leftBtnText='Left Button'
-                  rightBtnText='Left Button'
+                  leftBtnText='Register Now'
+                  rightBtnText='Learn More'
                 />
               </Slider>
               <Slider picture='10'>
                 <WindowSlide
                   title='Summer camp'
                   filter='filter invert'
-                  leftBtnText='Left Button'
-                  rightBtnText='Left Button'
+                  leftBtnText='Register Now'
+                  rightBtnText='Learn More'
                 />
               </Slider>
             </ReactFullpage.Wrapper>
