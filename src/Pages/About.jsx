@@ -2,9 +2,9 @@ import React from 'react'
 import ReactFullpage from '@fullpage/react-fullpage'
 import Slider from '../Components/Slider/Slider'
 import TextContainer from '../Components/TextContainer/TextContainer'
-import ResponsiveSlider from '../Components/Slider/ResponsiveSlider'
 import ImageTextSlider from '../Components/Slider/ImageTextSlider'
 import PreSchoolSlider from '../Components/PreSchoolIntialiSlider/PreSchoolSlider'
+import Banner from '../Components/Banner/Baner'
 
 function About () {
   const picture = [
@@ -35,14 +35,19 @@ function About () {
                   <TextContainer state={state.position} />
                 </Slider>
               ))}
-              <div className='section'>
+              {/* <div className='section'>
                 <span>
                   <ResponsiveSlider />
+                </span>
+              </div> */}
+              <div className='section'>
+                <span>
+                  <ImageTextSlider />
                 </span>
               </div>
               <div className='section'>
                 <span>
-                  <ImageTextSlider />
+                  <Banner />
                 </span>
               </div>
             </ReactFullpage.Wrapper>
