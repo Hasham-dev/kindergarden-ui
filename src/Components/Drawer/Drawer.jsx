@@ -16,8 +16,7 @@ export default function Drawer ({ children, isOpen, setIsOpen }) {
           (isOpen ? ' translate-x-0 ' : ' translate-x-full ')
         }
       >
-        <article className='relative w-screen max-w-lg pb-10 flex flex-col space-y-1 overflow-y-scroll h-screen'>
-          <header className='p-4 font-bold text-lg text-center text-black'>Navbar</header>
+        <article className='relative w-screen max-w-lg pb-10 flex flex-col divide-y-2 p-10 divide-gray-400 space-y-1 overflow-y-scroll h-screen'>
           {children}
         </article>
       </section>

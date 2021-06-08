@@ -18,20 +18,26 @@ function Navbar () {
         </span>
       </div>
       <Drawer isOpen={isOpen} setIsOpen={setIsOpen}>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Home</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/about' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/about'>Nursery</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/contact' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/contact'>Kindergarten</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/preschool' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Preschool</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/afterschool' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>After School</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/summercamp' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Summer camp</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/clinic' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Clinic</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/news' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>News</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/findus' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Find us</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/support' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Support</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/career' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Carreer</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/privacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>privacy</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/legacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>legacy</Link>
-        <Link className={`pl-10 my-2 mx-20 rounded-md p-2 ${pathname === '/aboutus' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>About Us</Link>
+        <span className='flex flex-col space-y-1'>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Home</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/about' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/about'>Nursery</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/contact' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/contact'>Kindergarten</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/preschool' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Preschool</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/afterschool' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>After School</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/summercamp' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Summer camp</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/clinic' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Clinic</Link>
+        </span>
+        <span className='flex flex-col space-y-1'>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/news' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>News</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/findus' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Find us</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/support' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Support</Link>
+        </span>
+        <span className='flex flex-col space-y-1'>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/career' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Carreer</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/privacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>privacy</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/legacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>legacy</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/aboutus' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>About Us</Link>
+        </span>
       </Drawer>
     </header>
   )
