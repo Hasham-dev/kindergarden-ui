@@ -61,12 +61,7 @@
 .active{
     background-color: black !important;
 }
-.wrapper {
-    -webkit-transform: translate3d(0,0,0);
-}
-.slide {
-    -webkit-transform: translate3d(0,0,0);
-}
-.section {
-    -webkit-transform: translate3d(0,0,0);
+
+html {
+    scroll-behavior: smooth;
 }

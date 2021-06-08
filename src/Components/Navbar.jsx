@@ -38,6 +38,18 @@ function Navbar () {
           <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/legacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>legacy</Link>
           <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/aboutus' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>About Us</Link>
         </span>
+        <span className='flex flex-col space-y-1'>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/career' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Carreer</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/privacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>privacy</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/legacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>legacy</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/aboutus' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>About Us</Link>
+        </span>
+        <span className='flex flex-col space-y-1'>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/career' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>Carreer</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/privacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>privacy</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/legacy' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>legacy</Link>
+          <Link className={`pl-10 my-1 mx-10 rounded-md p-2 ${pathname === '/aboutus' ? 'bg-purple-500' : 'text-black'}`} onClick={() => setIsOpen(false)} to='/'>About Us</Link>
+        </span>
       </Drawer>
     </header>
   )

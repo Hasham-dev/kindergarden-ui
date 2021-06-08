@@ -10,6 +10,7 @@ function Home () {
         scrollingSpeed={500}
         fitToSectionDelay={500}
         verticalCentered={false}
+        normalScrollElements='.navbar'
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>

@@ -21,6 +21,7 @@ function About () {
         scrollingSpeed={500}
         fitToSectionDelay={500}
         verticalCentered={false}
+        normalScrollElements='.modal, .navbar'
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
