@@ -33,6 +33,12 @@ module.exports = {
       xl: '1280px',
       '2xl': '1536px',
       '3xl': '1920px'
-    }
+    },
+    backgroundColor: theme => ({
+      ...theme('colors'),
+      primaryBlack: '#333333',
+      primaryPurple: '#9061F9BF',
+      primaryWhite: '#EBF5FFBF'
+    })
   }
 }
