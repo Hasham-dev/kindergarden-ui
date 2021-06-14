@@ -11,7 +11,7 @@ export default function SimpleSlider () {
     slidesToScroll: 1
   }
   return (
-    <div className='pt-40 md:px-20 px:0 h-screen bg-green-100'>
+    <div className='pt-40 md:px-20 px:0 h-screen bg-green-100 rounded-full'>
       <h1>Slider</h1>
       <Slider {...settings}>
         <div>

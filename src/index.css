@@ -75,3 +75,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+button:focus {
+    outline: none !important;
+}

@@ -3,6 +3,7 @@ import Slider from 'react-slick'
 import Image1 from '../../Resources/1.jpg'
 import Image2 from '../../Resources/2.jpg'
 import Image3 from '../../Resources/3.jpg'
+
 export default function ImageTextSlider () {
   const [nav1, setNav1] = useState(null)
   const [nav2, setNav2] = useState(null)
@@ -31,17 +32,17 @@ export default function ImageTextSlider () {
         <Slider asNavFor={nav2} ref={slider1} {...settings}>
           <div className='w-1/3 rounded h-1/2 overflow-hidden shadow-lg'>
             <div className='px-10 py-4'>
-              <img src={Image1} className='w-full h-96' alt='1st Picture' />
+              <img src={Image1} className='w-full h-96' alt='1st' />
             </div>
           </div>
           <div className='w-1/3 rounded h-1/2 overflow-hidden shadow-lg'>
             <div className='px-10 py-4'>
-              <img src={Image2} className='w-full h-96' alt='2nd Picture' />
+              <img src={Image2} className='w-full h-96' alt='2nd' />
             </div>
           </div>
           <div className='w-1/3 rounded h-1/2 overflow-hidden shadow-lg'>
             <div className='px-10 py-4'>
-              <img src={Image3} className='w-full h-96' alt='3rd Picture' />
+              <img src={Image3} className='w-full h-96' alt='3rd' />
             </div>
           </div>
         </Slider>
