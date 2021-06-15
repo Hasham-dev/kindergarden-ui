@@ -39,6 +39,14 @@ module.exports = {
       primaryBlack: '#333333',
       primaryPurple: '#9061F9BF',
       primaryWhite: '#EBF5FFBF'
+    }),
+    textColor: theme => ({
+      ...theme('colors'),
+      primaryDark: '#3F97B2'
+    }),
+    divideColor: theme => ({
+      ...theme('colors'),
+      primaryDark: '#3F97B2'
     })
   }
 }

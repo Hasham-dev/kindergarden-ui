@@ -17,7 +17,6 @@ function About () {
   return (
     <div>
       <ReactFullpage
-        licenseKey='http://www.gnu.org/licenses/gpl.html'
         scrollingSpeed={500}
         fitToSectionDelay={500}
         verticalCentered={false}

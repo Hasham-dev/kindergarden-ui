@@ -4,12 +4,19 @@ import Modal from '../Modal/Modal'
 
 function TextContainer ({ state }) {
   const [showModal, setShowModal] = useState(false)
+  const [Id, setId] = useState()
+
+  const showModalToggler = (id) => {
+    setId(id)
+    setShowModal(true)
+  }
 
   return (
     <>
       <Modal
         showModal={showModal}
         setShowModal={setShowModal}
+        Id={Id}
       />
       {state === 'left' &&
         <div className='md:w-1/4 w-screen h-1/3 md:h-screen text-black bg-white md:relative absolute md:bottom-none bottom-0'>
@@ -26,7 +33,7 @@ function TextContainer ({ state }) {
               </span>
               <button
                 class='w-1/2 ml-20 w-30 h-14 border-purple-400 border-4 px-0 md:px-10 mt-10 py-2 text-lg font-bold rounded-full text-black'
-                onClick={() => setShowModal(true)}
+                onClick={() => showModalToggler('IMAGE1')}
               >
                 Find out why
               </button>
@@ -42,7 +49,7 @@ function TextContainer ({ state }) {
               </span>
               <button
                 class='w-52 md:w-60 text-center h-14 border-4 border-purple-400 px-0 md:px-10 mt-10 ml-5 py-2 text-lg font-bold rounded-full'
-                onClick={() => setShowModal(true)}
+                onClick={() => showModalToggler('IMAGE2')}
               >
                 Find out why
               </button>
@@ -67,7 +74,7 @@ function TextContainer ({ state }) {
               </span>
               <button
                 class='w-1/2 border-purple-400 w-30 h-14 border-4 px-0 md:px-10 mt-10 ml-20 py-2 text-lg text-black font-bold rounded-full'
-                onClick={() => setShowModal(true)}
+                onClick={() => showModalToggler('IMAGE3')}
               >
                 Find out why
               </button>

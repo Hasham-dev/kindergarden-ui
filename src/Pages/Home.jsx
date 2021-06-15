@@ -6,11 +6,11 @@ function Home () {
   return (
     <>
       <ReactFullpage
-        licenseKey='http://www.gnu.org/licenses/gpl.html'
         scrollingSpeed={500}
         fitToSectionDelay={500}
         verticalCentered={false}
         normalScrollElements='.navbar'
+        dragAndMove
         render={({ state, fullpageApi }) => {
           return (
             <ReactFullpage.Wrapper>
