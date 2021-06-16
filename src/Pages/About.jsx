@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactFullpage from '@fullpage/react-fullpage'
 import Slider from '../Components/Slider/Slider'
 import TextContainer from '../Components/TextContainer/TextContainer'
 import ImageTextSlider from '../Components/Slider/ImageTextSlider'
@@ -15,45 +14,34 @@ function About () {
     { picture: 10, position: 'right' }
   ]
   return (
-    <div>
-      <ReactFullpage
-        scrollingSpeed={500}
-        fitToSectionDelay={500}
-        verticalCentered={false}
-        normalScrollElements='.modal, .navbar'
-        render={({ state, fullpageApi }) => {
-          return (
-            <ReactFullpage.Wrapper>
-              <Slider picture='4'>
-                <PreSchoolSlider
-                  title='Kindergarten'
-                  animation
-                />
-              </Slider>
-              {picture.map((state, index) => (
-                <Slider key={index} picture={state.picture}>
-                  <TextContainer state={state.position} />
-                </Slider>
-              ))}
-              {/* <div className='section'>
+    <div className='sectionContainer h-full w-full'>
+      <Slider picture='4'>
+        <PreSchoolSlider
+          title='Kindergarten'
+          animation
+        />
+      </Slider>
+      {picture.map((state, index) => (
+        <Slider key={index} picture={state.picture}>
+          <TextContainer state={state.position} />
+        </Slider>
+      ))}
+      {/* <div className='section'>
                 <span>
                   <ResponsiveSlider />
                 </span>
               </div> */}
-              <div className='section'>
-                <span>
-                  <ImageTextSlider />
-                </span>
-              </div>
-              <div className='section'>
-                <span>
-                  <Banner />
-                </span>
-              </div>
-            </ReactFullpage.Wrapper>
-          )
-        }}
-      />
+      <div className='section'>
+        <span>
+          <ImageTextSlider />
+        </span>
+      </div>
+      <div className='section'>
+        <span>
+          <Banner />
+        </span>
+      </div>
+
     </div>
   )
 }

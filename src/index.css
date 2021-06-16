@@ -11,16 +11,16 @@
 .bg-picture-1{
     background-image: url("/src/Resources/1.jpg");
 }
-.bg-picture-1::before, .bg-picture-2::before, .bg-picture-4::before, .bg-picture-5::before,
+/* .bg-picture-2::before, .bg-picture-4::before, .bg-picture-5::before,
 .bg-picture-6::before, .bg-picture-7::before, .bg-picture-8::before, .bg-picture-9::before, .bg-picture-10::before {
     content:"";
-    position: absolute;
+    position: relative;
     top:0;
     left:0;
     width:100%;
     height:100%;
     background-color: rgba(0, 0, 0, 0.116);
-}
+} */
 .bg-picture-2{
     background-image: url("/src/Resources/2.jpg");
 }
@@ -78,4 +78,18 @@ html {
 
 button:focus {
     outline: none !important;
+}
+
+.sectionContainer{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  overflow: auto;
+  top: 0;
+  left: 0;
+  scroll-snap-type: y mandatory;
+}
+
+.section{
+  scroll-snap-align: start;
 }
