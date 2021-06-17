@@ -12,12 +12,12 @@ export default function ImageTextSlider () {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 500,
     fade: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    arrows: false,
+    autoplay: false,
+    arrows: true,
     pauseOnHover: true
   }
 
@@ -28,7 +28,7 @@ export default function ImageTextSlider () {
 
   return (
     <div className='h-screen bg-black dark:bg-gray-900 py-10'>
-      <div className='md:p-20 p-2 mx-40 mt-10 md:mt-10'>
+      <div className='md:p-20 p-2 md:mx-40 mt-10 md:mt-10'>
         <Slider asNavFor={nav2} ref={slider1} {...settings}>
           <div className='w-1/3 rounded h-1/2 overflow-hidden shadow-lg'>
             <div className='px-10 py-4'>
@@ -53,7 +53,7 @@ export default function ImageTextSlider () {
           slidesToShow={1}
           swipeToSlide
           focusOnSelect
-          {...settings}
+          {...{ ...settings, arrows: false }}
         >
           <div className='px-6 py-4'>
             <p className='text-white text-base md:w-1/2 md:float-right font-semibold'>
